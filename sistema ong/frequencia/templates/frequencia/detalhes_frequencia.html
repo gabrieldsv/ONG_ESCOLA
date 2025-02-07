@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes da Frequência</title>
+</head>
+<body>
+    <h1>Detalhes da Frequência</h1>
+    <p>Aluno: {{ frequencia.aluno.nome_completo }}</p>
+    <p>Data da Aula: {{ frequencia.data_aula }}</p>
+    <p>Presente: {{ frequencia.presente }}</p>
+    <p>Motivo da Falta: {{ frequencia.motivo_falta }}</p>
+    <a href="{% url 'lista_frequencia' %}">Voltar para a lista de frequências</a>
+</body>
+</html>

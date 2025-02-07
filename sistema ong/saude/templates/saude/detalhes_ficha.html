@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes da Ficha de Anamnese</title>
+</head>
+<body>
+    <h1>Detalhes da Ficha de Anamnese</h1>
+    <p>Aluno: {{ ficha.aluno.nome_completo }}</p>
+    <p>Tipo: {{ ficha.tipo }}</p>
+    <p>Histórico: {{ ficha.historico }}</p>
+    <p>Hábitos: {{ ficha.habitos }}</p>
+    <p>Avaliações: {{ ficha.avaliacoes }}</p>
+    <p>Diagnósticos: {{ ficha.diagnósticos }}</p>
+    <p>Encaminhamentos: {{ ficha.encaminhamentos }}</p>
+    <p>Data de Registro: {{ ficha.data_registro }}</p>
+    <a href="{% url 'lista_fichas' %}">Voltar para a lista de fichas</a>
+</body>
+</html>
